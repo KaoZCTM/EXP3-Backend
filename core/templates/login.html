@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %} Login {% endblock %}
+{% block formulario %} <link rel="stylesheet" href="{% static 'css/formularioEstilos.css'%}"> {% endblock %}
+{% block content %}
+    <br />
+
+    <div class="container">
+        <form class="form">
+            <p class="title">Iniciar Sesión</p>
+            <label for="Correo Electronico">
+                <input name="correo" id="correo" required="" placeholder="" type="email" class="input" />
+                <span>Email</span>
+            </label>
+            <label for="pass">
+                <input name="pass" id="pass" placeholder="" type="password" class="input" required minlength="8" />
+                <span>Contraseña</span>
+            </label>
+            <button name="pass1" id="pass1" class="submit">Iniciar</button>
+            <p class="signin">
+                No tienes cuenta?<a href="{% url 'Registrate'%}">Registrate</a>
+            </p>
+        </form>
+    </div>
+    {% endblock %}

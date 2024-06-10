@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %} Perros {% endblock %}
+
+{% block content %}
+    <br><br>
+
+    <main class="container" style="background-color:#d1e4e4;">
+        <div class="row lg-12, margen-cartas">
+            <div class="col-lg-3" style="margin-bottom: 50px;">
+
+                <div class="card bg-dark text-white" onclick="this.classList.toggle('show-text')">
+                    <img src="{% static 'img/Perros/banditadulto25.jpg'%}" class="card-img">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Bandit Adulto</h5>
+                        <p class="card-text">25KG
+                            $30990</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3" style="margin-bottom: 50px;">
+
+                <div class="card bg-dark text-white" onclick="this.classList.toggle('show-text')">
+                    <img src="{% static 'img/Perros/cannesadulto9kg.jpg'%}" class="card-img">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Cannes Adulto</h5>
+                        <p class="card-text">9KG
+                            $15490</p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3" style="margin-bottom: 50px;">
+
+                <div class="card bg-dark text-white" onclick="this.classList.toggle('show-text')">
+                    <img src="{% static 'img/Perros/championadulto.jpg'%}" class="card-img">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Champion Dog Adultos</h5>
+                        <p class="card-text">18KG
+                            $25990</p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="card bg-dark text-white" onclick="this.classList.toggle('show-text')">
+                    <img src="{% static 'img/Perros/championcachorro.jpg'%}" class="card-img">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Champion Dog Cachorros</h5>
+                        <p class="card-text">3KG
+                            $12990</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row lg-12, margen-cartas">
+            <div class="col-lg-3" style="margin-bottom: 50px;">
+                <div class="card bg-dark text-white" onclick="this.classList.toggle('show-text')">
+                    <img src="{% static 'img/Perros/purinaonecachorros.jpg'%}" class="card-img">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Purina One Cachorros</h5>
+                        <p class="card-text">12KG
+                            $40990</p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3" style="margin-bottom: 50px;">
+                <div class="card bg-dark text-white" onclick="this.classList.toggle('show-text')">
+                    <img src="{% static 'img/Perros/sanson25.jpg'%}" class="card-img">
+                    <div class="card-img-overlay">
+
+                        <h5 class="card-title">Sason Adulto</h5>
+                        <p class="card-text">20KG
+                            $35990</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+{% endblock %}

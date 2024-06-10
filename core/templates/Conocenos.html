@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %} Conocenos {% endblock %}
+
+{% block content %}
+    <br>
+
+    <main class="container" style="background-color:#d1e4e4;">
+        <br><br>
+        <h1 style="display: flex; justify-content: center;">¿Qué alimento es el más adecuado para mi mascota?</h1>
+        <h3 style="display: flex; justify-content: center;">Este video hecho por profesionales te orientará a que
+            alimento elegir</h3>
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <!-- Contenedor del video -->
+                    <div class="video-container">
+                        <iframe width="560" height="315" src="{% static 'video/alimento-adecuado.mp4'%}" frameborder="0"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br><br><br>
+        <div class="row col-lg-12, margen-cartas">
+            <div class="col-lg-4" style="margin-bottom: 50px;">
+                <div class="card bg-dark text-white" style="width: auto;">
+                    <img src="{% static 'img/alimentos zeus.png'%}" class="card-img" alt="Animal Planet Gato Adulto">
+                    <div style="margin: 10%">
+                        <h1 class="card-title">Mision</h1>
+                        <p class="card-text">Nuestra misión es simple: facilitar la vida de los amantes de
+                            los animales al proporcionar alimentos para mascotas de calidad, entregados
+                            directamente a sus hogares.
+                            Nos comprometemos a mantener estándares altos en la selección de productos y
+                            a ofrecer un servicio personalizado que se adapte a las necesidades individuales
+                            de cada cliente. Además, buscamos ser un negocio responsable, preocupado por el
+                            bienestar animal y el impacto ambiental de nuestras operaciones.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4" style="margin-bottom: 50px;"></div>
+            <div class="col-lg-4" style="margin-bottom: 50px;">
+                <div class="card bg-dark text-white" style="width: auto;">
+                    <img src="{% static 'img/alimentos zeus.png'%}" class="card-img" alt="Animal Planet Gato Adulto">
+                    <div style="margin: 10%">
+                        <h1 class="card-title">Vision</h1>
+                        <p class="card-text">Nos vemos como una parte indispensable en el cuidado de
+                            las mascotas de nuestra comunidad, proporcionando alimentos de calidad y
+                            un servicio confiable. Queremos ser reconocidos como un negocio cercano y
+                            amigable, donde los dueños de mascotas puedan encontrar todo lo que
+                            necesitan para sus amigos peludos, sin complicaciones y con precios justos.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+{% endblock %}

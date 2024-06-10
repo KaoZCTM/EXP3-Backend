@@ -1,0 +1,136 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %} Inicio {% endblock %}
+
+{% block content %}
+  <main class="container" style="background-color:#d1e4e4;">
+    <br>
+    <!--carrusel-->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+      <!-- Indicators/dots -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+      </div>
+
+      <!-- The slideshow/carousel -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="{% static 'img/gato-4k-carrusel.jpg'%}" class="d-block w-100" height="500px">
+          <div class="texto-superpuesto">
+            <h1>Tenemos todo para tu gato</h1>
+            <br>
+            <h3>Haz click en la imagen para conocer más</h3>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="{% static 'img/perro-4k-carrusel.jpg'%}" class="d-block w-100" height="500px">
+          <div class="texto-superpuesto-abajo">
+            <h1>Cuidalos, dale siempre lo mejor</h1>
+            <br>
+            <h3>Haz click en la imagen para conocer más</h3>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="{% static 'img/gatito-4k-carrusel.jpg'%}" class="d-block w-100" height="500px">
+          <div class="texto-superpuesto">
+            <h1>¿Y para mi gatito?</h1>
+            <br>
+            <h3>Haz click en la imagen para conocer más</h3>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="{% static 'img/cachorro-4k-carrusel.webp'%}" class="d-block w-100" height="500px">
+          <div class="texto-superpuesto-derecha">
+            <h1>¿Y yo?</h1>
+            <br>
+            <h3>Haz click en la imagen para conocer más</h3>
+          </div>
+        </div>
+
+      </div>
+      
+      <!-- Left and right controls/icons -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+    <br>
+
+    <div class="row col-lg-12, margen-cartas">
+      <div class="card bg-secondary text-white" style="width: auto;">
+        <div style="margin: 10%">
+          <h1>Te enviaremos la comida preferida de tu mascota</h1>
+          <p>Añade y compra la comida favorita de tu mascota y nosotros la haremos llegar a tu hogar a la brevedad!</p>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <div class="row col-12">
+      <div class="col-lg-3">
+        <div class="card" style="width:90%">
+          <img class="card-img-top" src="{% static 'img/pollo-20kg-championcat.jpg'%}" alt="Card image"
+            style="height: 300px;">
+          <div class="card-body">
+            <h4 class="card-title">Champion cat 20kg Sabor pollo</h4>
+            <p class="card-text">Seks</p>
+            <a href="#" class="btn btn-primary"><img class="icono-texto"
+                src="{% static 'img/icono-carrito.png'%}">Agregar al carrito</a>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-lg-3">
+        <div class="card" style="width:90%">
+          <img class="card-img-top" src="{% static 'img/pescado-8kg-championcat.jpg'%}" alt="Card image"
+            style="height: 300px;">
+          <div class="card-body">
+            <h4 class="card-title">Champion cat 8kg Sabor pescado</h4>
+            <p class="card-text">Seks</p>
+            <a href="#" class="btn btn-primary" style="margin-left: 5%; margin-right: 5%;"><img class="icono-texto"
+                src="{% static 'img/icono-carrito.png'%}">Agregar al carrito</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="card" style="width:90%">
+          <img class="card-img-top" src="{% static 'img/delimix-no-kg-catchow.png'%}" alt="Card image"
+            style="height: 300px;">
+          <div class="card-body">
+            <h4 class="card-title">Cat Chow 24kg Sabor delimix</h4>
+            <p class="card-text">Skin 1</p>
+            <a href="#" class="btn btn-primary" style="margin-left: 5%; margin-right: 5%;"><img class="icono-texto"
+                src="{% static 'img/icono-carrito.png'%}">Agregar al carrito</a>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-lg-3">
+        <div class="card" style="width:90%">
+          <img class="card-img-top" src="{% static 'img/delimix-no-kg-catchow.png'%}" alt="Card image"
+            style="height: 300px;">
+          <div class="card-body">
+            <h4 class="card-title">Cat Chow 8kg Sabor delimix</h4>
+            <p class="card-text">Skin 2</p>
+            <a href="#" class="btn btn-primary" style="margin-left: 5%; margin-right: 5%;"><img class="icono-texto"
+                src="{% static 'img/icono-carrito.png'%}">Agregar al carrito</a>
+          </div>
+        </div>
+      </div>
+    </div> <!--Cierre de Row-->
+  </main>
+
+  <br><br>
+</body>
+{% endblock %}

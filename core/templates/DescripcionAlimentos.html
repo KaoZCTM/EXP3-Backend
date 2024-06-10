@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %} Descripción alimentos {% endblock %}
+
+{% block content %}
+<main class="container" style="background-color:#d1e4e4;">
+  <div>
+    <hr />
+    <h2>Descripción de alimentos</h2>
+    <hr />
+    <h4>
+      Aquí encontrarás los ingredientes que componen los alimentos que
+      vendemos, para más información se recomienda ver las páginas oficiales
+      de cada alimento.
+    </h4>
+    <br /><br />
+
+    <div class="row">
+      <div class="col-md-4">
+        <input type="button" value="Mostrar Mascotas" onclick="mostrarAlimentos()" class="btn btn-outline-primary" />
+      </div>
+
+      <div class="col-md-4">
+        <select name="tipo" id="especie" class="form-select">
+          <option value="">Seleccione tipo.</option>
+          <option value="Perro">Perro</option>
+          <option value="Gato">Gato</option>
+        </select>
+      </div>
+    </div>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Id interna</th>
+          <th>Marca alimento</th>
+          <th>Especie mascota</th>
+          <th>Edad</th>
+          <th>Ingredientes</th>
+        </tr>
+      </thead>
+      <tbody id="alimentosMascotas"></tbody>
+    </table>
+  </div>
+
+  <script src="{% static 'js/apiRestMascota.js' %}"></script>
+</main>
+{% endblock %}

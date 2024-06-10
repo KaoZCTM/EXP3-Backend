@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %} Registrate {% endblock %}
+{% block formulario %} <link rel="stylesheet" href="{% static 'css/formularioEstilos.css'%}"> {% endblock %}
+{% block content %}
+
+  <br>
+
+  <div class="container">
+
+    <form class="form">
+      <p class="title">Registrarse </p>
+      <p class="message">Registrate ahora y te informaremos de todas las novedades y descuentos para tu mascota </p>
+      <div class="flex">
+        <label for="nom">
+          <input name="nom" id="nom" required="" placeholder="" type="text" class="input">
+          <span>Nombre</span>
+        </label>
+
+        <label for="ape">
+          <input name="ape" id="ape" required="" placeholder="" type="text" class="input">
+          <span>Apellido</span>
+        </label>
+      </div>
+
+      <label for="fecha">
+        <input name="correo" id="correo" type="date" class="input" required min="1940-01-01">
+      </label>
+
+      <label for="correo">
+        <input name="correo" id="correo" required="" placeholder="" type="email" class="input">
+        <span>Email</span>
+      </label>
+
+      <label for="pass1">
+        <input name="pass1" id="pass1" placeholder="" type="password" class="input" required minlength="8">
+        <span>Contraseña</span>
+      </label>
+      <label for="pass2">
+        <input name="pass2" id="pass2" placeholder="" type="password" class="input" required minlength="8">
+        <span>Confirmar contraseña</span>
+      </label for="pass2">
+      <button name="pass2" id="pass2" class="submit">Registrar</button>
+      <p class="signin">Ya tienes una cuenta creada? <a id="linkForm" href="{% url 'login'%}">Ingresa</a> </p>
+    </form>
+
+  </div>
+
+  <script src="{% static 'js/validaFormulario.js'%}"></script>
+</body>
+
+{% endblock %}

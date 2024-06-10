@@ -1,0 +1,123 @@
+.nav-menu {
+  background-color: #d1e4e4;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 1px 4px black;
+  font-variant: small-caps;
+  text-align: unset;
+}
+
+.container-cards {
+  margin-bottom: 20px;
+  padding: 5px;
+  display: flex;
+}
+
+.card {
+  width: 300px;
+  height: 200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-img {
+  height: 350px !important;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+footer {
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+}
+
+strong {
+  color: #ffe08c;
+}
+
+p {
+  color: #bea869;
+}
+
+.dentro-footer {
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.nav-item {
+  margin-left: 10%;
+  margin-right: 10%;
+  -webkit-margin-collapse: 20%;
+}
+
+.icono-texto {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.texto-superpuesto,
+.texto-superpuesto-derecha,
+.texto-superpuesto-abajo {
+  position: absolute;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: larger;
+  color: white;
+}
+
+.texto-superpuesto {
+  left: 10%;
+  top: 10%;
+}
+
+.texto-superpuesto-derecha {
+  right: 10%;
+  top: 10%;
+}
+
+.texto-superpuesto-abajo {
+  left: 10%;
+  top: 40%;
+}
+
+@media only screen and (max-width: 768px) {
+  .container-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 80%;
+  }
+}
+
+.margen-cartas {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.form-control {
+  margin-bottom: 10px;
+}
+
+label {
+  font-weight: bold;
+  clear: both;
+  float: left;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.error-label {
+  border: 1px solid red;
+}
+
+label.error {
+  color: red;
+  font-size: 0.8em;
+  margin-top: -5px;
+}

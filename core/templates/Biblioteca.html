@@ -1,0 +1,115 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %} Gatos {% endblock %}
+
+{% block content %}
+  <br><br>
+
+  <!-- Inicio de cards -->
+  <main class="container" style="background-color:#d1e4e4;">
+    <div class="row col-lg-12, margen-cartas">
+      <div class="col-lg-4" style="margin-bottom: 50px;">
+        <div class="card bg-dark text-white" onclick="this.classList.toggle('show-text')">
+          <img src="{% static 'img/animalplanetgatoadulto.jpg'%}" class="card-img" alt="Animal Planet Gato Adulto">
+          <div class="card-img-overlay">
+            <h5 class="card-title">Animal Planet Gato Adulto</h5>
+            <p class="card-text">7,5KG $39990</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4" style="margin-bottom: 50px;">
+        <div class="card bg-dark text-white" onclick="this.classList.toggle('show-text')">
+          <img src="{% static 'img/royalcaningatito.png'%}" class="card-img" alt="RC Kitten">
+          <div class="card-img-overlay">
+            <h5 class="card-title">Animal Planet Gato Adulto</h5>
+            <p class="card-text">7,5KG $54990</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card bg-dark text-white" onclick="this.classList.toggle('show-text')">
+          <img src="{% static 'img/rc indoor.webp'%}" class="card-img" alt="RC Indoor">
+          <div class="card-img-overlay">
+            <h5 class="card-title">Animal Planet Gato Adulto</h5>
+            <p class="card-text">8KG $44500</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row col-lg-12, margen-cartas">
+      <div class="col-lg-4" style="margin-bottom: 50px;">
+        <div class="card bg-dark text-white" onclick="this.classList.toggle('show-text')">
+          <img src="{% static 'img/animalplanetgatito.jpg'%}" class="card-img" alt="Animal Planet Gatitos">
+          <div class="card-img-overlay">
+            <h5 class="card-title">Animal Planet Gatitos</h5>
+            <p class="card-text">8KG $47000</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4" style="margin-bottom: 50px;">
+        <div class="card bg-dark text-white" onclick="this.classList.toggle('show-text')">
+          <img src="{% static 'img/fitformulaaorasi.webp'%}" class="card-img" alt="Fit Formula Adulto">
+          <div class="card-img-overlay">
+            <h5 class="card-title">Fit Formula Adulto</h5>
+            <p class="card-text">10KG $27500</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card bg-dark text-white" onclick="this.classList.toggle('show-text')">
+          <img src="{% static 'img/fit-arena.jpg'%}" class="card-img" alt="Arena Sanitaria Aglomerante">
+          <div class="card-img-overlay">
+            <h5 class="card-title">Arena Sanitaria Aglomerante</h5>
+            <p class="card-text">20KG $16990</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row col-lg-12, margen-cartas">
+      <div class="col-lg-4" style="margin-bottom: 50px;">
+        <div class="card bg-dark text-white" onclick="this.classList.toggle('show-text')">
+          <img src="{% static 'img/easyclean.jpg'%}" class="card-img" alt="Animal Planet Gatitos">
+          <div class="card-img-overlay">
+            <h5 class="card-title">Arena Easyclean</h5>
+            <p class="card-text">20KG $16990</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4" style="margin-bottom: 50px;">
+        <div class="card bg-dark text-white" onclick="this.classList.toggle('show-text')">
+          <img src="{% static 'img/TOPK9.jpg'%}" class="card-img" alt="Animal Planet Gatitos">
+          <div class="card-img-overlay">
+            <h5 class="card-title">Arena TOPK9</h5>
+            <p class="card-text">20KG $30000</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card bg-dark text-white" onclick="this.classList.toggle('show-text')">
+          <img src="{% static 'img/collares.jpg'%}" class="card-img" alt="Animal Planet Gatitos">
+          <div class="card-img-overlay">
+            <h5 class="card-title">Collares</h5>
+            <p class="card-text">$3000 c/u</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row col-lg-12, margen-cartas">
+      <div class="col-lg-4" style="margin-bottom: 50px;">
+        <div class="card bg-dark text-white" onclick="this.classList.toggle('show-text')">
+          <img src="{% static 'img/gatoparalitico.jpg'%}" class="card-img" alt="Animal Planet Gatitos">
+          <div class="card-img-overlay">
+            <h5 class="card-title">Silla Rueda Gato</h5>
+            <p class="card-text">$150.000</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!--Fin de cards-->
+</body>
+{% endblock %}
